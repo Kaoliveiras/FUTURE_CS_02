@@ -39,4 +39,95 @@ I used Google Docs to analyze the security logs and identify suspicious activiti
 [Task2-Report.pdf](Task2-Report.pdf)
 
 
+SIEM ANALYSIS REPORT: 
+![SIEM Dashboard](SIEM-TASK2.png)
+
+
+
+🔍 Alert Triage Process
+Initial Review: Scanned 50+ security logs for suspicious patterns
+
+Priority Filtering: Focused on "malware detected" and "login failed" events
+
+Pattern Identification: Grouped alerts by user, IP, and threat type
+
+Risk Assessment: Classified based on malware severity and spread
+
+🚨 Threat Identification
+Malware Analysis:
+Ransomware: Critical - data encryption threat
+
+Rootkit: Critical - system-level persistence
+
+Worm: High - network propagation risk
+
+Spyware: Medium - data exfiltration
+
+Trojan: Medium - backdoor access
+
+Network Threats:
+IP 203.0.113.77: High risk - 11 occurrences, multiple attack types
+
+Brute Force Patterns: 4 failed logins across 3 users
+
+Lateral Movement: Multiple users accessing same suspicious IPs
+
+📊 Incident Classification Criteria
+HIGH PRIORITY:
+Ransomware/Rootkit detection
+
+Multiple malware types per user
+
+High-frequency suspicious IPs (>5 occurrences)
+
+MEDIUM PRIORITY:
+Single Trojan/Spyware detection
+
+Failed login attempts
+
+Moderate IP suspiciousness (3-5 occurrences)
+
+LOW PRIORITY:
+Single connection attempts
+
+Successful logins without malware
+
+Normal file access
+
+🛡️ SOC Response Actions
+IMMEDIATE (0-2 hours):
+Isolate infected machines: bob, alice, david, eve
+
+Block malicious IPs at firewall
+
+Reset compromised credentials
+
+Initiate malware containment
+
+SHORT-TERM (2-24 hours):
+Full network scan for additional infections
+
+User awareness notification
+
+Backup verification for ransomware recovery
+
+Security policy review
+
+LONG-TERM (1-7 days):
+Implement multi-factor authentication
+
+Enhance endpoint protection
+
+Conduct security training
+
+Update incident response playbook
+
+📈 Key Findings Summary
+Attack Sophistication: Multi-vector attack (ransomware + rootkit + worm)
+
+Compromise Scale: 5 users, 4 critical IPs, 5 malware types
+
+Business Impact: High - data integrity and availability at risk
+
+Response Urgency: Critical - immediate containment required
 
