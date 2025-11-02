@@ -34,3 +34,9 @@ I used Google Docs to analyze the security logs and identify suspicious activiti
 ![Color-Coded Security Alerts](Docs3.png)
 
 
+
+📋 Incident Response Report:
+[Task2-Report.pdf](Task2-Report.pdf)
+
+
+
