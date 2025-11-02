@@ -12,6 +12,6 @@ This internship project provides a beginner-friendly introduction to Security Op
 • Detailed incident response report with timeline, impact, and remediation
 • SIEM dashboard summary and analysis
 • Online tool implementation 
-
+ 
 
 
